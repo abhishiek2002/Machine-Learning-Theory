@@ -33,6 +33,7 @@ Used for grouping similar data points (e.g., segmenting customers, grouping simi
         Cluster 3: Low spenders
     
 Optimization:
+
     The Elbow Method is used to find the best value of K.
     Uses Euclidean Distance to measure similarity.
 
@@ -46,4 +47,19 @@ Used when we don't know the number of clusters beforehand.
     2️⃣ Merge the two closest clusters.
     3️⃣ Repeat until there's only one big cluster.
 
- 
+### ✏️ Types:
+
+    1️⃣ Agglomerative (Bottom-Up) – Start with individual points and merge clusters.
+    2️⃣ Divisive (Top-Down) – Start with one big cluster and split it into smaller ones.
+
+📌 Example:
+
+    Grouping movies based on viewer preferences.
+        Step 1: Each movie is its own cluster.
+        Step 2: Similar movies (e.g., Sci-Fi movies) merge into one cluster.
+        Step 3: The process repeats until all movies are grouped.
+
+✔️Optimization:
+
+    Uses a Dendrogram (tree diagram) to find the best number of clusters.
+
