@@ -1,3 +1,5 @@
+<img src='./Images/Supervised Learning.png'>
+
 # Supervised Learning Introduction
 
 ## What is Supervised Learning?
@@ -198,7 +200,7 @@ If P < 0.5, we classify it as Fail
 
     Uses Gradient Descent to adjust weights.     
 
-## Support Vector Machine (SVM)
+## 6️⃣ Support Vector Machine (SVM)
 
 Used for classification by drawing the best boundary (hyperlane) between classes.
 
@@ -215,3 +217,33 @@ Used for classification by drawing the best boundary (hyperlane) between classes
 ✔️ Optimization:
 
     If data is not linearly separable, SVM applies kernel tricks to map data into higher dimensions.
+
+## 7️⃣ Random Forest Algorithm
+
+A collection of multiple decision trees that improves accuracy.
+Used for classification and regression by combining multiple decision trees.
+
+📌 Example: 
+
+    Imagine you ask 10 different doctors about a diagnosis. Instead of relying on just one, you take the majority vote.
+
+### How it works:
+
+    1️⃣ Create Multiple Decision Trees - It generates many trees using random subsets of data.
+    2️⃣ Aggregate Results:
+        For classification, take the majority vote.
+        For regression, take the average prediction.
+    3️⃣ Reduce Overfitting - More trees lead to a stable and accurate model.
+
+📌 Example:
+
+    Predicting if a customer will buy a product:
+        Decision Tree 1: Yes
+        Decision Tree 2: No
+        Decision Tree 3: Yes
+        Final Prediction (majority vote): Yes
+    
+Optimization:
+
+    Uses Bootstrap Aggregation (Bagging) for better performance.
+
