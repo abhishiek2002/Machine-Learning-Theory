@@ -1,9 +1,14 @@
+<img src='./Images/Introduction.png' >
+
 # 📌 Introduction to Image Processing
 Before we start, let's think about something familiar. Imagine you take a photo using your phone. What happens? The camera captures the image, processes it, and stores in it your gallery.
 
 Now, what if we want to:
+
 ✅ Make the image brighter or darker?
+
 ✅ Remove noise (like blurry parts or unwanted spots)?
+
 ✅ Detect objects in the image (like faces in a selfie)?
 
 This is where `image processing` comes in! Image processing is all about manipulating images to improve them or extract useful information.
@@ -36,8 +41,11 @@ Grayscale Image: Each pixel has a single intensity value (0-255).
 [ 90  140  190  255 ]
 ```
 Here:
+
  0 = Completely black 🖤
+
  255 = Completely white 🤍 
+
  Values in between represent different shades of gray.
 
 Color Image: Each pixel has three values (Red, Green, Blue - RGB).
@@ -65,6 +73,7 @@ cv2.destroyAllWindows()
 
  ## 1️⃣ Sampling (Choosing Pixels)
  Imagine taking a group photo 📸.
+
     If you take a `high resolution` image, you capture more details.
     If you take a `low resolution` image, you capture fewer details.
 
@@ -73,6 +82,7 @@ cv2.destroyAllWindows()
     Fewer pixels = Poor quality (but smaller file size)
 
 📌 Example:
+
     A 1080p image has `1920 x 1080` pixels (high sampling)
     A 240p image has `426 x 240` pixels (low sampling)
 
@@ -94,10 +104,12 @@ Now, let's talk about color levels.
     If you take a color photo, you have millions of colors.
 
 💡 Quantization is like choosing how many colors an image can have.
+
     More colors = smoother image.
     Fewer colors = blocky image.
 
 📌 Example:
+
     Old video games (like Mario 🎮) had very few colors (low quantization).
     Modern games (like GTA 🎮) have high color depth (high quantization).
 
@@ -116,12 +128,17 @@ cv2.destroyAllWindows()
 
 When we process an image, we follow these steps:
 
-1️⃣Image Acquisition - Capture the image using a camera or scanner.
-2️⃣Preprocessing - Remove noise, adjust brightness/contrast.
-3️⃣Segmentation - Identify important parts (like detecting faces).
-4️⃣Feature Extraction - Pick out special details (like face recognition in your phone).
-5️⃣Image Recognition - Identify objects or patterns (like face recognition in your phone).
-6️⃣Storage & COmpression - Save the image efficiently (like JPEG, PNG).
+    1️⃣Image Acquisition - Capture the image using a camera or scanner.
+
+    2️⃣Preprocessing - Remove noise, adjust brightness/contrast.
+
+    3️⃣Segmentation - Identify important parts (like detecting faces).
+
+    4️⃣Feature Extraction - Pick out special details (like face recognition in your phone).
+
+    5️⃣Image Recognition - Identify objects or patterns (like face recognition in your phone).
+
+    6️⃣Storage & COmpression - Save the image efficiently (like JPEG, PNG).
 
 👉 Example: Convert Image to Grayscale (Preprocessing)
 
@@ -173,13 +190,15 @@ Until now, we talked about grayscale images (black & white images). But most ima
 ## 🎨 How do we represent colors?
 
 Every color image is made up of three basic colors:
-1️⃣ Red (R)
-2️⃣ Green (G)
-3️⃣ Blue (B)
+
+    1️⃣ Red (R)
+    2️⃣ Green (G)
+    3️⃣ Blue (B)
 
 💡 These three colors combine to create all other colors (just like mixing paints). This is called the RGB model.
 
 📌 Example:
+
     Pure Red = (255, 0, 0)
     Pure Green = (0, 255, 0)
     Pure Blue = (0, 0, 255)
@@ -212,9 +231,9 @@ cv2.destroyAllWindows()
 
 # Summary (Key Takeaways)
 
-📌 Digital Image = Collection of tiny pixels an image should have.
-📌 Sampling = Choosing how many pixels an image should have.
-📌 Quantization = Deciding how many color levels to use.
-📌 Steps in Image Processing = Acquisition ➝ Preprocessing ➝ Segmentation ➝ Feature Extraction ➝ Recognition ➝ Storage.
-📌 Color Images use RGB (Red, Green, Blue) to create all colors.
+    📌 Digital Image = Collection of tiny pixels an image should have.
+    📌 Sampling = Choosing how many pixels an image should have.
+    📌 Quantization = Deciding how many color levels to use.
+    📌 Steps in Image Processing = Acquisition ➝ Preprocessing ➝ Segmentation ➝ Feature Extraction ➝ Recognition ➝ Storage.
+    📌 Color Images use RGB (Red, Green, Blue) to create all colors.
 
